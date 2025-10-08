@@ -1,0 +1,16 @@
+# Entorno Virtual
+venv/
+.venv/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+
+# Carpeta del dataset (muy pesada para subir)
+datasets/
+
+# Carpeta de resultados de entrenamiento y predicción
+runs/
+
+# Archivos del sistema
+.DS_Store

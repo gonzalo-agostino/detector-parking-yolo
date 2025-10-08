@@ -1,0 +1,10 @@
+# Rutas relativas a la carpeta del proyecto
+path: ./datasets
+train: train/images
+val: valid/images
+test: test/images
+
+# Definición de clases para tu proyecto
+names:
+  0: libre
+  1: ocupado
