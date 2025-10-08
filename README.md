@@ -2,36 +2,45 @@
 
 Este proyecto utiliza YOLOv8 para detectar espacios de estacionamiento libres y ocupados a partir de imágenes o videos, especialmente útil para análisis con drones.
 
+---
+
 ## 🚀 Instalación
 
-1.  **Clona el repositorio:**
+Sigue estos pasos para poner en marcha el proyecto en tu computadora.
+
+1.  **Clona este repositorio de código:**
+    _Abre una terminal y ejecuta el siguiente comando._
 
     ```bash
-    git clone [https://www.youtube.com/watch?v=W3ARA19UB4w](https://www.youtube.com/watch?v=W3ARA19UB4w)
-    cd [Nombre de tu repositorio]
+    git clone [https://github.com/gonzalo-agostino/detector-parking-yolo.git](https://github.com/gonzalo-agostino/detector-parking-yolo.git)
+    cd detector-parking-yolo
     ```
 
 2.  **Crea y activa un entorno virtual:**
 
     ```bash
+    # Para Windows
     python -m venv venv
     .\venv\Scripts\activate
     ```
 
-3.  **Instala las dependencias:**
+3.  **Instala las dependencias necesarias:**
     ```bash
     pip install -r requirements.txt
     ```
 4.  **Descarga el modelo entrenado:**
-    - Ve a la sección de "Releases" de este repositorio.
+    - En este repositorio de GitHub, ve a la sección de **"Releases"** (en el panel de la derecha).
     - Descarga el archivo `best.pt`.
-    - Crea la siguiente estructura de carpetas `runs/detect/parking_yolov8_run/weights/` y coloca el archivo `best.pt` dentro.
+    - Crea la siguiente estructura de carpetas: `runs/detect/parking_yolov8_run/weights/`.
+    - Coloca el archivo `best.pt` que descargaste dentro de esa carpeta `weights`.
+
+---
 
 ## 🏃‍♂️ Cómo Usarlo
 
-Usa el script `predict.py` desde la terminal, pasándole la ruta a una imagen o video.
+Usa el script `predict.py` desde la terminal, pasándole la ruta a una imagen o video que quieras analizar.
 
-**Para una imagen:**
+**Para analizar una imagen:**
 
 ```bash
 python predict.py ruta/a/tu/imagen.jpg
